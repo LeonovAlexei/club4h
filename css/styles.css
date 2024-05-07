@@ -1,0 +1,1269 @@
+/* CSS для главной */
+/*Сбрасываем стили*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Merriweather, sans-serif;
+  width: 100%;
+  color: #313131;
+  background-color: #FFFFFF;
+  overflow-x:hidden;
+  }
+header {
+  z-index: 99;
+}
+.main-screen {
+  height: 700px;
+  background: #E9DED4;
+}
+.main-bg {
+  width: 1222px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+  overflow-y: clip;
+}
+.coin {
+  width: 660px;
+  height: 660px;
+  background: url('/img/coin.png') no-repeat;
+  position: absolute;
+  bottom: 84px;
+  left: 601px;
+  z-index: 1;
+  animation-name: rotation;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.chess {
+  width: 126px;
+  height: 266px;
+  background: url('/img/chess.png') no-repeat;
+  position: absolute;
+  top: 165px;
+  left: 990px;
+  z-index: 2;
+}
+.korol {
+  width: 130px;
+  height: 266px;
+  background: url('/img/korol.png') no-repeat;
+  position: absolute;
+  top: 270px;
+  left: 657px;
+  z-index: 3;
+}
+.city {
+  width: 1627px;
+  height: 464px;
+  background: url('/img/city.png') no-repeat;
+  position: absolute;
+  top: 259px;
+  left: -192px;
+  z-index: 4;
+}
+.textura {
+  width: 2363px;
+  height: 1593px;
+  background: url('/img/textura.png') no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: color-burn;
+  z-index: 5;
+}
+.kon {
+  width: 197px;
+  height: 269px;
+  background: url('/img/kon.png') no-repeat;
+  position: absolute;
+  top: 482px;
+  left: 764px;
+  z-index: 6;
+}
+.peshka {
+  width: 83px;
+  height: 123px;
+  background: url('/img/peshka.png') no-repeat;
+  position: absolute;
+  top: 558px;
+  left: 1167px;
+  z-index: 7;
+}
+.grid-12col {
+  display: grid;
+  grid-template-columns: repeat(6, 84px 83px);
+  grid-column-gap: 20px;
+  grid-template-rows: 64px;
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.logo {
+  grid-column: 1/auto;
+  margin-top:  26px;
+  height: 36px;
+  z-index: 8;
+}
+.wrapper {
+  grid-template-rows: auto;
+}
+.content {
+  width: 542px;
+  height: 444px;
+  margin-top: 60px;
+  grid-column: 1;
+  z-index: 9;}
+.running_line_container {
+  overflow: hidden;
+  background-color: #F54932;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  }
+.running_lines {
+  width: 200%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.running_lines span {
+  width: 100%;
+  display: flex;
+}
+.item {
+  font:  normal 22px / 1.1 Merriweather;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: auto 6px;
+  white-space: nowrap;
+}
+.circle {
+  background: #FFFFFF;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.span1 {
+  display: flex;
+  animation: running-line-infinite1 20s linear infinite;
+  animation-delay: -20s;
+}
+.span2 {
+  display: flex;
+  animation: running-line-infinite2 20s linear infinite;
+  animation-delay: -10s;
+}
+@keyframes running-line-infinite1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes running-line-infinite2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+.content p {
+  margin-top: 24px;
+  text-align: center;
+  font: normal 18px / 1.3 "Golos Text";
+}
+.content h1 {
+  font: normal 60px / 1.1 Merriweather;
+  text-transform: uppercase;
+}
+.text-align-center {
+  display: flex;
+  justify-content: center;
+}
+.text-align-end {
+  display: flex;
+  justify-content: right;
+}
+.buttonsLine {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.main_button {
+  width: 263px;
+  height: 72px;
+  border-radius: 66px;
+  font: normal 500 16px / 1.3 "Golos Text";
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+button span{
+  width: 165px;
+  }
+a {
+  text-decoration: none;}
+#votingButton {
+  color: #FFFFFF;
+  background: #1F1F1F;
+}
+#votingButton:hover {
+  color: #1F1F1F;
+  background: #FBCE51;
+}
+#detailsButton {
+  color: #1F1F1F;
+  outline: 2px solid #1F1F1F;
+  background: transparent;
+}
+#detailsButton::after {
+  width: 261px;
+  height: 70px;
+  outline: 2px solid #1F1F1F;
+}
+#detailsButton:hover {
+  color: #ffffff;
+  background: #1F1F1F;
+}
+/*Анимация вращения монеты*/
+@keyframes rotation {
+  0% {
+    transform:rotate(360deg);
+  }
+  100% {
+    transform:rotate(0deg);
+  }
+}
+/*Оформление события*/
+.event {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  grid-template-rows: 250px 527px;
+  row-gap: 64px;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+h3 {
+  font: normal 36px / 1.35 Merriweather;
+  text-transform: uppercase;
+    }
+.offer-part-1 {
+  grid-column: 1/9;
+  width: 764px;
+  height: 194px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: start;
+  align-content: center;
+}
+h3 span:last-child {
+  font-weight: bold;
+  color: #F54932;
+}
+.img-playing-chess {
+  width: 394px;
+  height: 250px;
+  background: url('/img/playing_chess.png') no-repeat;
+  grid-column: 9 / auto;
+}
+.offer-part-2 {
+  grid-column: 6/13;
+  display: grid;
+  grid-template-rows: 147px 320px;
+  row-gap: 60px;
+}
+del {
+  text-decoration: line-through;
+  text-decoration-color: #F54932;
+  text-decoration-thickness: 2px;
+}
+table {
+  grid-row: 2;
+  border-collapse: collapse;
+}
+.h5 {
+  font: normal 20px / 1.2 "Golos Text";
+}
+caption {
+  caption-side: bottom;
+  padding: 48px 0 0 0;
+  text-align: start;
+  color: #3057A2;
+}
+th,
+td {
+  border-bottom :2px solid #D0D0D0;
+  text-align: start;
+  font-weight: 600;
+}
+th {
+  width: 305px;
+  border-right :2px solid #D0D0D0;
+  padding: 15px 0 15px 0;
+  font-weight: normal;
+  opacity: 70%;
+}
+td {
+   padding: 15px 0 15px 15px;
+}
+tr:first-child th:first-child {
+  padding: 0 0 15px 0;
+}
+tr:first-child td:last-child {
+  padding: 0 0 15px 15px;
+}
+
+tr:last-child th:first-child {
+  padding: 15px 0 0 0;
+  border-bottom: none;
+}
+tr:last-child td:last-child {
+  padding: 15px 0 0 15px;
+  border-bottom: none;
+}
+td > del {
+  padding-right: 12px;
+}
+.img-one-player-chess {
+  width: 474px;
+  height: 527px;
+  grid-column: 1/6;
+  margin: 0 0;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.hod_slonom {
+  width: 285px;
+  height: 293px;
+  background: url('/img/chod_slonom.png') no-repeat;
+  position: absolute;
+  left: 195px;
+  top: 332px;
+  z-index: 6;
+}
+.one-player {
+  width: 339px;
+  height: 341px;
+  background: url('/img/one_player.png') no-repeat;
+  position: absolute;
+  left: 76px;
+  top: 89px;
+  z-index: 5;
+}
+.zvezda_1 {
+  width: 529px;
+  height: 344px;
+  background: url('/img/Vector 95.svg') no-repeat;
+  position: absolute;
+  left: -28px;
+  top: -28px;
+  z-index: 4;
+}
+.desiyt_rub {
+  width: 122px;
+  height: 241px;
+  background: url('/img/desiyt_rub.png') no-repeat;
+  position: absolute;
+  left: calc(100% - 122px);
+  top: 23px;
+  z-index: 3;
+}
+.bumagniy_fon {
+  width: 406px;
+  height: 438px;
+  background: url('/img/bumazniy_fon.png') no-repeat;
+  position: absolute;
+  left: 23px;
+  top: 40px;
+  z-index: 2;
+}
+.zvezda_2 {
+  width: 249px;
+  height: 218px;
+  background: url('/img/zvezda2.svg') no-repeat;
+  position: absolute;
+  left: -16px;
+  top: 297px;
+  z-index: 7;
+}
+.cherniy_kon {
+  width: 158px;
+  height: 173px;
+  background: url('/img/kon_cherniy.png') no-repeat;
+  position: absolute;
+  left: 64px;
+  top: 355px;
+  z-index: 8;
+}
+.fon_s_color-burn {
+  width: 528px;
+  height: 609px;
+  background: url('/img/fon_s_nalozeniem.png') no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: color-burn;
+  z-index: 9;
+}
+h2 {
+  font: normal 54px / 1.2 Merriweather;
+  text-transform: uppercase;
+}
+.stages_of_changes {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  grid-template-rows: 130px 400px ;
+  row-gap: 54px;
+}
+.wrapper_2 {
+  width: 806px;
+  height: 130px;
+  grid-column: 1/9;
+  display: grid;
+  grid-template-rows: 65px 65px;
+  grid-template-columns: 301px auto;
+}
+.wrapper_2 h2 {
+  grid-column: 1 / 3;
+}
+.wrapper_2 p {
+  font: normal 20px / 1.2 "Golos Text";
+  grid-row: 2;
+  grid-column: 2/3;
+  width: 280px;
+  color: #3057A2;
+  display: grid;
+  align-items: center;
+}
+.stages {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-rows: 112px 112px 136px;
+  row-gap: 20px;
+}
+.number {
+  font-weight: 600;
+  background-color: #FFFFFF;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 20px 16px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+.stage-content {
+  font: normal 500 20px / 1.2 "Golos Text";
+  width: 302px;
+  margin: 20px 20px 0 0;
+  z-index: 4;
+}
+.slide_1{
+  grid-column: 1/9;
+  display: grid;
+  column-gap: 20px;
+}
+.slide_2 {
+  display: grid;
+  grid-column: 9/13;
+  grid-row: 1/3;
+}
+.slide_3{
+  grid-column: 1/9;
+  display: grid;
+  column-gap: 20px;
+}
+.slide_4{
+  grid-column: 1/5;
+  display: grid;
+}
+.slide_5{
+  grid-column: 5/13;
+  display: grid;
+}
+.stage_1 {
+  grid-column: 1/5;
+}
+.stage_2 {
+  grid-column: 5/9;
+}
+.stage_3 {
+  grid-column: 9/13;
+  grid-row: 1/3;
+}
+.stage_4 {
+  grid-column: 1/5;
+}
+.stage_5 {
+  grid-column: 5/9;
+}
+.stage_6 {
+  grid-column: 1/5;
+}
+.stage_7 {
+  grid-column: 1/13;
+}
+.stage_7 > .stage-content{
+  width: 446px;
+}
+.card-stage {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  position: relative;
+  overflow: hidden;
+}
+.card_bg_textura_beton {
+  width: 1066px;
+  height: 489px;
+  background: url('/img/textura_beton_card_stages.png') no-repeat;
+  position: absolute;
+  left: -242px;
+  top: -106px;
+  mix-blend-mode: color-burn;
+  z-index: 2;
+  }
+.card_bg_textura_paper{
+  width: 704px;
+  height: 357px;
+  background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+  position: absolute;
+  left: -32px;
+  top: -67px;
+  z-index: 1;
+  }
+.card-stage.stage_7 .card_bg_textura_paper {
+  width: 886px;
+  height: 448px;
+  background: url('/img/textura_Paper_cards_stages_7.png') no-repeat;
+  position: absolute;
+  left: -32px;
+  top: -67px;
+  z-index: 1;
+}
+.card-stage.stage_6 .card_bg_textura_paper {
+  width: 886px;
+  height: 448px;
+  background: url('/img/textura_Paper_cards_stages_7.png') no-repeat;
+  position: absolute;
+  left: -98px;
+  top: -99px;
+  z-index: 1;
+}
+.card-stage.stage_6 .card_bg_textura_beton {
+  width: 864px;
+  height: 396px;
+  background: url('/img/textura_beton_card_stages_6.png') no-repeat;
+  position: absolute;
+  left: -300px;
+  top: -106px;
+  mix-blend-mode: color-burn;
+  z-index: 2;
+}
+.wrapper_1 {
+  position: relative;
+  width: 1222px;
+  margin: 0 auto;
+}
+.stage_7_bg_samolet {
+  width: 401px;
+  height: 235px;
+  background: url('/img/stage7_samolet.png') no-repeat;
+  position: absolute;
+  left: 884px;
+  top: 351px;
+  z-index: 7;
+}
+.pagination_and_buttons{
+  display: none;
+}
+.participants {
+  margin-top: 100px;
+  margin-bottom: 140px;
+  grid-template-rows: 65px 462px;
+  row-gap: 60px;
+}
+.wrapper_3 {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: 806px 394px ;
+  column-gap: 20px;
+}
+.wrapper_3 h2 {
+  grid-column: 1/2;
+}
+.slider_control {
+  font: normal 400 16px / 1.2 "Golos Text";
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.separator,
+.total_slides {
+  opacity: 60%;
+}
+.slider_button {
+  height: 44px;
+  width: 44px;
+}
+.slider_button:hover .fill_icon {
+ fill: #FBCE51;
+}
+.slider_button:disabled .fill_icon{
+  fill: #D6D6D6;
+}
+.button_left {
+    margin-right: 14px;
+}
+.button_right {
+    margin-left: 14px;
+}
+.participants_slider {
+  width: 1222px;
+}
+.sliders_line {
+  width: 1222px;
+  height: 462px;
+  position: relative;
+  gap: 20px;
+  overflow: hidden;
+}
+.slider_item {
+  position: absolute;
+  width: 394px;
+  height: 462px;
+  display: grid;
+  justify-items: center;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+.slider_item img {
+  width: 320px;
+  height: 320px;
+}
+h4 {
+  font: normal 600 24px / 1.2 "Golos Text";
+}
+.slider_item h4 {
+  margin-top: 28px;
+  width: 394px;
+  text-align: center;
+}
+.slider_item h5 {
+  opacity: 60%;
+  margin-top: 6px;
+  text-align: center;
+}
+.more_button {
+  width: 113px;
+  height: 35px;
+  border-radius: 62px;
+  font: normal 500 16px / 1.3 "Golos Text";
+  outline: solid 1px #3057A2;
+  color: #3057A2;
+  border: 0;
+  background-color: transparent;
+  margin-top: 20px;
+}
+.more_button:hover {
+  color: #FFFFFF;
+  background-color: #3057A2;
+}
+footer {
+  background-color: #E9DED4;
+  height: 150px;
+}
+footer p {
+  width: 1222px;
+  margin: 0 auto;
+  padding-top: 40px;
+  font: normal 400 16px / 1.2 "Golos Text";
+  opacity: 60%;
+}
+.offer-for-mobile {
+  grid-column: 1 / 13;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Стили для мобилки*/
+
+
+@media all and (min-width:0px) and (max-width: 768px){
+  .main-screen {
+    height: 774px;
+  }
+  .main-bg {
+    width: 335px;
+    height: 774px;
+  }
+  .coin {
+    width: 298px;
+    height: 298px;
+    background-size: contain;
+    bottom: 67px;
+    left: 10px;
+  }
+  .chess {
+    width: 73px;
+    height: 113px;
+    background-size: contain;
+    top: 498px;
+    left: 202px;
+    }
+  .korol {
+    width: 59px;
+    height: 121px;
+    background-size: contain;
+    top: 541px;
+    left: 43px;
+  }
+  .city {
+    width: 887px;
+    height: 253px;
+    background-size: contain;
+    top: 532px;
+    left: -423px;
+   }
+  .textura {
+    width: 1394px;
+    height: 2088px;
+    background-size: contain;
+    top: -465px;
+    right: -140px;
+    transform: rotate(-90deg);
+  }
+  .kon {
+    width: 98px;
+    height: 134px;
+    background-size: contain;
+    top: 661px;
+    left: 126px;
+    }
+  .peshka {
+    display: none;
+  }
+  .grid-12col {
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 50px;
+    grid-auto-rows: auto;
+    justify-content: center;
+    align-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 213px;
+    height: 32px;
+    grid-column: 1/auto;
+    margin-top:  20px;
+    }
+  .logo img {
+     width: 100%;
+   }
+  .content {
+    width: 335px;
+    height: 393px;
+    margin-top: 40px;
+    }
+  .content h1 {
+    font: normal 36px / 1.1 Merriweather;
+    height: 160px;
+  }
+  .content p {
+    width: 335px;
+    height: 69px;
+    text-align: left;
+  }
+  .buttonsLine {
+    margin-top: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main_button {
+    width: 335px;
+    height: 47px;
+    font: normal 500 16px / 1.3 "Golos Text";
+    border: 0;
+  }
+  #detailsButton {
+    color: #1F1F1F;
+    outline: 2px solid #1F1F1F;
+    background: transparent;
+    margin-top: 14px;
+  }
+  button span{
+    width: 249px;
+      }
+  #detailsButton {
+    outline: none;
+    background: #FFFFFF;
+  }
+  #detailsButton::after {
+    width: 335px;
+    height: 47px;
+    outline: none;
+  }
+  .running_line_container {
+    height: 38px;
+  }
+  .item {
+    font:  normal 16px / 1.1 Merriweather;
+  }
+  .event {
+    margin-top: 48px;
+    margin-bottom: 60px;
+    grid-template-rows: 564px 35px 402px 24px 228px 44px 476px;
+    grid-template-columns: 335px;
+    row-gap: 0;
+    background-color: #FFFFFF;
+    display: grid;
+    align-items: start;
+  }
+  h3 {
+    font: normal 28px / 1.35 Merriweather;
+    text-transform: uppercase;
+  }
+  .offer-for-mobile {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 114px 38px 260px 76px 76px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .img-playing-chess {
+    grid-column: 1/2;
+    height: 212px;
+    grid-row: 3/4;
+    background-size: contain;
+  }
+  .offer-part-1 {
+    grid-column: 1/2;
+    grid-row: 1/6;
+    height: 564px;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 335px;
+    grid-template-rows: 114px 38px 260px 76px 76px;
+  }
+  .offer-part-1 span:first-child {
+   grid-column: 1/2;
+   grid-row: 1/2;
+  }
+  .offer-part-1 span:nth-last-child(-n+2){
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .offer-part-1 span:last-child{
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .img-one-player-chess {
+    width: 335px;
+    height: 402px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 0 0;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .hod_slonom {
+    width: 201px;
+    height: 206px;
+    left: 137px;
+    top: 254px;
+    background-size: contain;
+  }
+  .one-player {
+    width: 239px;
+    height: 241px;
+    left: 53px;
+    top: 82px;
+    background-size: contain;
+  }
+  .zvezda_1 {
+    width: 374px;
+    height: 243px;
+    left: -20px;
+    top: 0;
+    background-size: contain;
+  }
+  .desiyt_rub {
+    width: 86px;
+    height: 170px;
+    left: 249px;
+    top: 36px;
+    background-size: contain;
+  }
+  .bumagniy_fon {
+    width: 286px;
+    height: 308px;
+    left: 16px;
+    top: 49px;
+    background-size: contain;
+  }
+  .zvezda_2 {
+    width: 176px;
+    height: 154px;
+    left: -11px;
+    top: 230px;
+    background-size: contain;
+  }
+  .cherniy_kon {
+    width: 111px;
+    height: 122px;
+    left: 45px;
+    top: 271px;
+    background-size: contain;
+  }
+  .offer-part-2 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 8;
+    display: grid;
+    grid-template-rows: 228px 476px;
+    row-gap: 44px;
+  }
+  .offer-part-2 h3 {
+    grid-row: 1/2;
+  }
+  table {
+    grid-row: 2/3;
+    border-collapse: collapse;
+  }
+  caption {
+    font: normal 18px / 1.2 "Golos Text";
+    caption-side: bottom;
+    padding: 40px 0 0 0;
+    text-align: start;
+    color: #3057A2;
+  }
+  th, td {
+    display: inline-block;
+    width: 335px;
+    padding: 0 0 12px 0;
+    border-right: 0;
+  }
+  th {
+    border-bottom: 0;
+    padding: 15px 0 12px 0;
+  }
+  td {
+    padding: 0 0 15px 0;
+  }
+  tr:last-child td:last-child {
+    padding: 12px 0 0 0;
+    border-bottom: none;
+  }
+  tr:first-child th:first-child {
+    padding: 0 0 12px 0;
+  }
+  tr:first-child td:last-child {
+    padding: 0 0 15px 0;
+  }
+  tr:nth-last-child(2) {
+    display: inline-grid;
+    grid-template-columns: 153px 182px;
+    align-items: baseline;
+  }
+  tr:nth-last-child(2) td {
+    width: 182px;
+    padding: 15px 0 15px 0;
+
+  }
+  tr:nth-last-child(2) th {
+  width: 153px;
+    border-bottom :2px solid #D0D0D0;
+    padding: 15px 0 15px 0;
+
+  }
+  h2 {
+    font: normal 36px / 1.1 Merriweather;
+    }
+  .wrapper_1 {
+    position: relative;
+    width: 335px;
+    height: 688px;
+    margin: 120px auto 120px auto;
+  }
+  .stages_of_changes {
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-template-rows: 176px 148px 300px 28px 36px ;
+    row-gap: 0;
+  }
+  .wrapper_2 {
+    width: 335px;
+    height: 176px;
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-rows: 120px 44px;
+    row-gap: 12px;
+  }
+  .wrapper_2 h2 {
+    grid-column: 1 / 2;
+  }
+  .wrapper_2 p {
+    font: normal 18px / 1.2 "Golos Text";
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 335px;
+  }
+  .stage_7_bg_samolet {
+    width: 338px;
+    height: 198px;
+    background-size: contain;
+    top: 191px;
+    left: 10px;
+    transform: rotate(-3.42deg);
+  }
+  .number {
+    font-weight: 600;
+    background-color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 0 16px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .stage-content {
+       font: normal 500 18px / 1.2 "Golos Text";
+       width: 243px;
+       margin: 0;
+       z-index: 4;
+     }
+  .stages {
+    width: 335px;
+    height: 300px;
+    position: absolute;
+    top: 324px;
+    left: 0;
+    gap: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .card-stage {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    position: relative;
+    overflow: visible;
+  }
+  .stage_for_mobile_slider {
+    position: absolute;
+    grid-template-columns: 335px;
+    grid-template-rows: 40px auto;
+    height: 300px;
+    display: grid;
+    row-gap : 28px;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    overflow: hidden;
+  }
+  .slide_1 {
+    display: grid;
+    grid-template-rows: 40px 88px 88px auto;
+     }
+  .stage_1{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    display: grid;
+  }
+  .stage_2 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .slide_2  {
+    display: grid;
+    grid-template-rows: 40px auto;
+  }
+  .stage_3,
+  .stage_6,
+  .stage_7 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .slide_3 {
+    display: grid;
+    grid-template-rows: 40px 44px 66px auto;
+  }
+  .stage_4{
+    grid-row: 2/4;
+    grid-column: 1/2;
+    display: grid;
+  }
+  .stage_5 {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .slide_4  {
+    grid-row: 2/4;
+    display: grid;
+  }
+  .slide_5  {
+    grid-row: 2/4;
+    display: grid;
+  }
+  .card_bg_textura_beton {
+    left: -230px;
+    top: -208px;
+  }
+  .card_bg_textura_paper{
+    width: 704px;
+    height: 357px;
+    background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+    position: absolute;
+    left: -28px;
+    top: -108px;
+    z-index: 1;
+  }
+  .stage_2 .card_bg_textura_beton,
+  .stage_5 .card_bg_textura_beton {
+    display: none;
+  }
+  .stage_2 .card_bg_textura_paper,
+  .stage_5 .card_bg_textura_paper{
+    display: none;
+  }
+  .stage_7 > .stage-content {
+    width: 243px;
+  }
+  .card-stage.stage_6 .card_bg_textura_beton {
+    width: 1066px;
+    height: 489px;
+    background: url('/img/textura_beton_card_stages.png') no-repeat;
+    position: absolute;
+    left: -230px;
+    top: -208px;
+  }
+  .card-stage.stage_6 .card_bg_textura_paper,
+  .card-stage.stage_7 .card_bg_textura_paper {
+    width: 704px;
+    height: 357px;
+    background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+    position: absolute;
+    left: -28px;
+    top: -108px;
+    z-index: 1;
+  }
+  .pagination_and_buttons{
+    display: inline-flex;
+    grid-row: 5/6;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .dots_block {
+    margin: auto 10px;
+    display: flex;
+  }
+  .dots_block span {
+  margin: 6px;
+  }
+  .pagination-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+  .pagination-item.active {
+    background-color: #313131;
+  }
+  button.slider2_button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    width: 36px;
+    height: 36px;
+  }
+  button.slider2_button:disabled .fill_icon{
+    fill: #D6D6D6;
+  }
+  .participants {
+    margin-bottom: 100px;
+    grid-template-columns: 335px;
+    grid-template-rows: 80px 388px 36px;
+    row-gap: 40px;
+  }
+  .wrapper_3 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 80px 36px ;
+    row-gap: 468px;
+    justify-items: center;
+  }
+  .wrapper_3 h2 {
+    /*width: 335px;*/
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .slider_control {
+    /*width: 335px;*/
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .participants_slider {
+    /*width: 335px;*/
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .slider_button {
+    height: 36px;
+    width: 36px;
+  }
+  .sliders_line {
+    width: 335px;
+    height: 388px;
+  }
+  .slider_item {
+    width: 335px;
+    height: 388px;
+  }
+  .slider_item img {
+    width: 244px;
+    height: 244px;
+  }
+  .slider_item h4 {
+    width: 335px;
+  }
+  .slider_item h5 {
+    margin-top: 8px;
+  }
+  footer {
+   height: 214px;
+  }
+  footer p {
+    width: 335px;
+  }
+}
