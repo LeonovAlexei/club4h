@@ -29,7 +29,7 @@ header {
 .coin {
   width: 660px;
   height: 660px;
-  background: url('/img/coin.png') no-repeat;
+  background: url('../img/coin.png') no-repeat;
   position: absolute;
   bottom: 84px;
   left: 601px;
