@@ -4,7 +4,8 @@ const totalSlide = document.querySelector('.total_slides'); //всего сла�
 const btnPrev = document.querySelector('.button_left');
 const btnNext = document.querySelector('.button_right');
 const slides = document.getElementsByClassName('slider_item');
-let slideToShow = 3;
+let slideToShow;
+(screen.width<768) ? slideToShow = 1 : slideToShow = 3;
 let currentSlideIndex = 0;
 let lastSlideIndex = slides.length-1;
 let summSlide = slides.length;
