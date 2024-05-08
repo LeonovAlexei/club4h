@@ -42,7 +42,7 @@ header {
 .chess {
   width: 126px;
   height: 266px;
-  background: url('/img/chess.png') no-repeat;
+  background: url('../img/chess.png') no-repeat;
   position: absolute;
   top: 165px;
   left: 990px;
@@ -51,7 +51,7 @@ header {
 .korol {
   width: 130px;
   height: 266px;
-  background: url('/img/korol.png') no-repeat;
+  background: url('../img/korol.png') no-repeat;
   position: absolute;
   top: 270px;
   left: 657px;
@@ -60,7 +60,7 @@ header {
 .city {
   width: 1627px;
   height: 464px;
-  background: url('/img/city.png') no-repeat;
+  background: url('../img/city.png') no-repeat;
   position: absolute;
   top: 259px;
   left: -192px;
@@ -69,7 +69,7 @@ header {
 .textura {
   width: 2363px;
   height: 1593px;
-  background: url('/img/textura.png') no-repeat;
+  background: url('../img/textura.png') no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,7 +80,7 @@ header {
 .kon {
   width: 197px;
   height: 269px;
-  background: url('/img/kon.png') no-repeat;
+  background: url('../img/kon.png') no-repeat;
   position: absolute;
   top: 482px;
   left: 764px;
@@ -89,7 +89,7 @@ header {
 .peshka {
   width: 83px;
   height: 123px;
-  background: url('/img/peshka.png') no-repeat;
+  background: url('../img/peshka.png') no-repeat;
   position: absolute;
   top: 558px;
   left: 1167px;
@@ -276,7 +276,7 @@ h3 span:last-child {
 .img-playing-chess {
   width: 394px;
   height: 250px;
-  background: url('/img/playing_chess.png') no-repeat;
+  background: url('../img/playing_chess.png') no-repeat;
   grid-column: 9 / auto;
 }
 .offer-part-2 {
@@ -350,7 +350,7 @@ td > del {
 .hod_slonom {
   width: 285px;
   height: 293px;
-  background: url('/img/chod_slonom.png') no-repeat;
+  background: url('../img/chod_slonom.png') no-repeat;
   position: absolute;
   left: 195px;
   top: 332px;
@@ -359,7 +359,7 @@ td > del {
 .one-player {
   width: 339px;
   height: 341px;
-  background: url('/img/one_player.png') no-repeat;
+  background: url('../img/one_player.png') no-repeat;
   position: absolute;
   left: 76px;
   top: 89px;
@@ -368,7 +368,7 @@ td > del {
 .zvezda_1 {
   width: 529px;
   height: 344px;
-  background: url('/img/Vector 95.svg') no-repeat;
+  background: url('../img/star.svg') no-repeat;
   position: absolute;
   left: -28px;
   top: -28px;
@@ -377,7 +377,7 @@ td > del {
 .desiyt_rub {
   width: 122px;
   height: 241px;
-  background: url('/img/desiyt_rub.png') no-repeat;
+  background: url('../img/desiyt_rub.png') no-repeat;
   position: absolute;
   left: calc(100% - 122px);
   top: 23px;
@@ -386,7 +386,7 @@ td > del {
 .bumagniy_fon {
   width: 406px;
   height: 438px;
-  background: url('/img/bumazniy_fon.png') no-repeat;
+  background: url('../img/bumazniy_fon.png') no-repeat;
   position: absolute;
   left: 23px;
   top: 40px;
@@ -395,7 +395,7 @@ td > del {
 .zvezda_2 {
   width: 249px;
   height: 218px;
-  background: url('/img/zvezda2.svg') no-repeat;
+  background: url('../img/zvezda2.svg') no-repeat;
   position: absolute;
   left: -16px;
   top: 297px;
@@ -404,7 +404,7 @@ td > del {
 .cherniy_kon {
   width: 158px;
   height: 173px;
-  background: url('/img/kon_cherniy.png') no-repeat;
+  background: url('../img/kon_cherniy.png') no-repeat;
   position: absolute;
   left: 64px;
   top: 355px;
@@ -413,7 +413,7 @@ td > del {
 .fon_s_color-burn {
   width: 528px;
   height: 609px;
-  background: url('/img/fon_s_nalozeniem.png') no-repeat;
+  background: url('../img/fon_s_nalozeniem.png') no-repeat;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -533,7 +533,7 @@ h2 {
 .card_bg_textura_beton {
   width: 1066px;
   height: 489px;
-  background: url('/img/textura_beton_card_stages.png') no-repeat;
+  background: url('../img/textura_beton_card_stages.png') no-repeat;
   position: absolute;
   left: -242px;
   top: -106px;
@@ -543,7 +543,7 @@ h2 {
 .card_bg_textura_paper{
   width: 704px;
   height: 357px;
-  background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+  background: url('../img/textura_Paper_cards_stages.png') no-repeat;
   position: absolute;
   left: -32px;
   top: -67px;
@@ -552,7 +552,7 @@ h2 {
 .card-stage.stage_7 .card_bg_textura_paper {
   width: 886px;
   height: 448px;
-  background: url('/img/textura_Paper_cards_stages_7.png') no-repeat;
+  background: url('../img/textura_Paper_cards_stages_7.png') no-repeat;
   position: absolute;
   left: -32px;
   top: -67px;
@@ -561,7 +561,7 @@ h2 {
 .card-stage.stage_6 .card_bg_textura_paper {
   width: 886px;
   height: 448px;
-  background: url('/img/textura_Paper_cards_stages_7.png') no-repeat;
+  background: url('../img/textura_Paper_cards_stages_7.png') no-repeat;
   position: absolute;
   left: -98px;
   top: -99px;
@@ -570,7 +570,7 @@ h2 {
 .card-stage.stage_6 .card_bg_textura_beton {
   width: 864px;
   height: 396px;
-  background: url('/img/textura_beton_card_stages_6.png') no-repeat;
+  background: url('../img/textura_beton_card_stages_6.png') no-repeat;
   position: absolute;
   left: -300px;
   top: -106px;
@@ -585,7 +585,7 @@ h2 {
 .stage_7_bg_samolet {
   width: 401px;
   height: 235px;
-  background: url('/img/stage7_samolet.png') no-repeat;
+  background: url('../img/stage7_samolet.png') no-repeat;
   position: absolute;
   left: 884px;
   top: 351px;
@@ -1139,7 +1139,7 @@ footer p {
   .card_bg_textura_paper{
     width: 704px;
     height: 357px;
-    background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+    background: url('../img/textura_Paper_cards_stages.png') no-repeat;
     position: absolute;
     left: -28px;
     top: -108px;
@@ -1159,7 +1159,7 @@ footer p {
   .card-stage.stage_6 .card_bg_textura_beton {
     width: 1066px;
     height: 489px;
-    background: url('/img/textura_beton_card_stages.png') no-repeat;
+    background: url('../img/textura_beton_card_stages.png') no-repeat;
     position: absolute;
     left: -230px;
     top: -208px;
@@ -1168,7 +1168,7 @@ footer p {
   .card-stage.stage_7 .card_bg_textura_paper {
     width: 704px;
     height: 357px;
-    background: url('/img/textura_Paper_cards_stages.png') no-repeat;
+    background: url('../img/textura_Paper_cards_stages.png') no-repeat;
     position: absolute;
     left: -28px;
     top: -108px;
