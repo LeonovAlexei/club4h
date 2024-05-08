@@ -708,6 +708,10 @@ footer p {
 
 
 @media all and (min-width:0px) and (max-width: 768px){
+  html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+  }
   .main-screen {
     height: 774px;
   }
