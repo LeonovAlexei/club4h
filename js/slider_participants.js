@@ -23,13 +23,14 @@ function movingSlides (slideIndex) {
 		s.style.transform = `translate3d(${widthTransform * (i - slideIndex)}px,0,0)`
 	})
 	currentSlideIndex = slideIndex;
+	getNumberCurentSlide();
 }
 
 movingSlides(currentSlideIndex);
 
 function getNumberCurentSlide(){
-
-	indexvive = parseInt(slides[slideToShow].className.match(/\d+/));
+let index = (slideToShow === 3 )? slideToShow: currentSlideIndex
+	indexvive = parseInt(slides[index].className.match(/\d+/));
 	numberCurrentSlide.textContent = indexvive.toString();
 	}
 
