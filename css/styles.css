@@ -1208,6 +1208,7 @@ footer p {
     border-radius: 0;
     width: 36px;
     height: 36px;
+    background: transparent;
   }
   button.slider2_button:disabled .fill_icon{
     fill: #D6D6D6;
