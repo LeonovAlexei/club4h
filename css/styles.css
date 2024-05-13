@@ -149,6 +149,7 @@ header {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+
 }
 .span1 {
   display: flex;
@@ -209,6 +210,8 @@ header {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  transition: all 1s;
+  position: relative;
 }
 button span{
   width: 165px;
@@ -218,10 +221,26 @@ a {
 #votingButton {
   color: #FFFFFF;
   background: #1F1F1F;
+  overflow: hidden;
 }
-#votingButton:hover {
-  color: #1F1F1F;
+#votingButton::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: #FBCE51;
+  transition: all 1s;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+#votingButton:hover::before {
+transform: translateX(0);
+}
+#votingButton:hover{
+  background: transparent;
+  color: #1F1F1F;
 }
 #detailsButton {
   color: #1F1F1F;
@@ -623,12 +642,19 @@ h2 {
 .slider_button {
   height: 44px;
   width: 44px;
+  transition: all 1s;
+}
+.slider_button .fill_icon {
+  fill: #313131;
+  transition: all 1s;
 }
 .slider_button:hover .fill_icon {
  fill: #FBCE51;
+  transition: all 1s;
 }
 .slider_button:disabled .fill_icon{
   fill: #D6D6D6;
+  transition: all 1s;
 }
 .button_left {
     margin-right: 14px;
@@ -682,6 +708,7 @@ h4 {
   border: 0;
   background-color: transparent;
   margin-top: 20px;
+  transition: all 1s;
 }
 .more_button:hover {
   color: #FFFFFF;
@@ -1246,7 +1273,9 @@ footer p {
   .slider_button {
     height: 36px;
     width: 36px;
+    
   }
+
   .sliders_line {
     width: 335px;
     height: 388px;

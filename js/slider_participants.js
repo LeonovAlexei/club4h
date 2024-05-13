@@ -35,14 +35,14 @@ let index = (slideToShow === 3 )? slideToShow: currentSlideIndex
 	}
 
 function readyNextSlide() {
-	// if Текущий слайд - это последний слайд, сдвиньте первый слайд до конца
+
 	if (currentSlideIndex === (lastSlideIndex - slideToShow)) {
 		slides[lastSlideIndex].insertAdjacentElement("afterend", slides[0]);
 		slides[lastSlideIndex].style.transform = `translate3d(${widthTransform}px, 0,0)`;
-		currentSlideIndex--;		//это связано с тем, что текущий слайд теперь является предпоследним слайдом
+		currentSlideIndex--;
 		getNumberCurentSlide();
 	}
-	// if Текущий слайд - это первый слайд, переместите последний слайд в начало
+
 	if (currentSlideIndex === 0) {
 		slides[0].insertAdjacentElement("beforebegin", slides[lastSlideIndex]);
 		slides[0].style.transform = `translate3d(-${widthTransform}px ,0 ,0)`;
@@ -51,8 +51,7 @@ function readyNextSlide() {
 	}
 
 }
-// поместить последний слайд в начало; (условие "если" не является обязательным, но обеспечивает
-// условие "если" может быть использовано в будущем, если пользователь настроит показ начального слайда в качестве последнего слайда )
+
 if (currentSlideIndex === lastSlideIndex || currentSlideIndex === 0) readyNextSlide();
 
 function shiftSlides(direction) {
