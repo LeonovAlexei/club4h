@@ -1237,6 +1237,15 @@ footer p {
     height: 36px;
     background: transparent;
   }
+  button.slider2_button:hover .fill_icon{
+    fill: #FBCE51;
+    transition: all 1s;
+  }
+  button.slider2_button::before .fill_icon{
+    fill: #313131;
+    transition: all 1s;
+  }
+
   button.slider2_button:disabled .fill_icon{
     fill: #D6D6D6;
   }
